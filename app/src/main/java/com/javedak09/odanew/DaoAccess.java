@@ -24,4 +24,7 @@ public interface DaoAccess {
 
     @Query("SELECT * FROM users WHERE id =:college_id")
     UserEntity getSingleRecord(int college_id);
+
+    @Query("DELETE FROM users")
+    UserEntity deleteUsers();
 }
